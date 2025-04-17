@@ -16,11 +16,7 @@ QtObject {
         {
           background-color: #727891;
         }
-        QTextEdit {
-          background-color: #8aadf4;
-          selection-background-color: #ed8796;
-          selection-color: #d19a66;
-        }
+
 
         `);
     }

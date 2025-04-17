@@ -4,8 +4,7 @@ whiskers:
   matrix:
     - variant: ["themes"]
     - flavor
-    - accent
-  filename: "{{variant}}/{{flavor.identifier}}/{{accent}}_ui_theming.qml"
+  filename: "{{variant}}/scripts/{{flavor.identifier}}.qml"
 ---
 import QtQml 2.0
 
@@ -25,11 +24,7 @@ QtObject {
         {
           background-color: #{{ overlay2 | mix(color=base, amount=0.7) | get(key="hex") }};
         }
-        QTextEdit {
-          background-color: #{{ blue.hex }};
-          selection-background-color: #{{ red.hex }};
-          selection-color: #d19a66;
-        }
+
 
         `);
     }
